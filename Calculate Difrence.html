@@ -16,19 +16,17 @@
     //conastants
     var BR = "<br>";   //Html break
     var ES = "";       //Empty string
-
     //INPUT
-
     price2015 = prompt("Enter 2015 price",ES);
     price2016 = prompt("Enter 2016 price",ES);
-    
     price2015 = parseFloat(price2015);
     price2016 = parseFloat(price2016);
-    //process
-
-
-    //output
-
+    //PROCESS
+    priceDiff = price2015 - price2016;
+    pctChange = 100.0 * (priceDiff/price2015);
+    //OUTPUT
+    document.write("The difference is: $" + priceDiff + BR);
+    document.write("% change is: " + pctChange + "%")
 </script>
 <!-- HTML can go here -->
 </body>
